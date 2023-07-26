@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="simple form practice">
+  <meta name="author" content="Juan Camilo Montealegre">
+  <title>Form</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="./icon.png">
+  <!-- Font-Awesome Icons -->
+  <script
+  src="https://kit.fontawesome.com/acc4ba919d.js"
+  crossorigin="anonymous"
+></script>
+</head>
+<body>
+
+  <!-- main container -->
+  <div class="main-container">
+    
+    <div class="container">
+      <!-- info -->
+      <div class="info">
+        <div class="title">
+          <h2>join us today </h2>
+          <div class="hr"></div>
+        </div>
+        <div class="picture">
+          <img src="./img/donation.jpg" alt="donation illustration" width="80%">
+        </div>
+        <div class="info-text">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate suscipit nisi consectetur animi fugiat molestias dolorum sapiente, voluptatibus magnam facilis sunt sequi dolores velit perspiciatis repudiandae temporibus iure eius et.
+          </p>
+        </div>
+        <div class="options">
+          <ul class="list column-1">  
+            <li><button><span class="fa-solid fa-check"></span> single donation</button></li>
+            <li><button><span class="fa-solid fa-check"></span> monthly donation</button></li>
+          </ul>
+
+          <ul class="list column-2">
+            <li><button><span class="fa-solid fa-check"></span> annual support</button></li>
+            <li><button><span class="fa-solid fa-check"></span> monthly suppor</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <!-- form -->
+      <div class="form">
+        <div class="title">
+          <h1>be a donor</h1>
+          <hr>
+        </div>
+        <form class="form-document" action="#">
+          <div class="name-data">
+            <div class="first-name">
+              <label for="first-name">First name *</label>
+              <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div class="last-name">
+              <label for="last-name">Last name</label>
+              <input type="text" name="last-name" id="last-name">
+            </div>
+          </div>
+          <div class="email">
+            <label for="email">Email Address *</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="country">
+            <div class="country-data">
+              <label for="country">Country</label>
+              <input type="text" name="country" id="country">
+            </div>
+            <div class="phone">
+              <label for="phone">Phone number</label>
+              <input type="number" name="phone" id="phone">
+            </div>
+          </div>
+          <div class="donation">
+            <label for="donation">Donation Amount *</label>
+            <select name="donation" id="donation">
+              <option value="50" selected>$50</option>
+              <option value="100">$100</option>
+              <option value="150">$150</option>
+            </select>
+          </div>
+          <div class="payment">
+            <label for="payment">Payment Method *</label>
+            <select name="payment" id="payment">
+              <option value="select">Select a payment method</option>
+            </select>
+          </div>
+          <div class="identity">
+            <p>May we thank you publicly</p>
+            <input type="checkbox" name="checkbox" id="checkbox" value="No, please keep my identity anonymus">
+            <label for="checkbox">No, please keep my identity anonymus</label>
+          <div>
+          <button class="btn-form" type="submit">Donate</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
